@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,600&family=Poppins:wght@300;500;600&display=swap');
+
+
+
+
+.box {
+    margin: 350px;
+    display: flex;
+}
+
+.red {
+    border: 1px solid red;
+    background-color: red;
+    height: 200px;
+    width: 1000px;
+}
+
+.green {
+    border: 1px solid green;
+    background-color: green;
+    height: 200px;
+    width: 1000px;
+}
+
+.blue {
+    border: 1px solid blue;
+    background-color: blue;
+    height: 200px;
+    width: 1000px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .box {
+      display: block;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    .box {
+      display: block;
+    }
+    .red{
+        width: 550px;
+    }
+    .green{
+        width: 550px;
+    }
+    .blue{
+        width: 550px;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .box {
+      display: block;
+    }
+    .red{
+        width: 300px;
+    }
+    .green{
+        width: 300px;
+    }
+    .blue{
+        width: 300px;
+    }
+  }
+@media only screen and (max-width: 320px) {
+    .box {
+      display: flex;
+    }
+    .red{
+        width: 100px;
+        height: 50px;
+    }
+    .green{
+        width: 100px;
+        height: 50px;
+    }
+    .blue{
+        width: 100px;
+        height: 50px;
+    }
+  }
+
+
+@media (max-width:480px) and (min-width:320px) {
+    * {
+        background-color: red;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+    }
+
+    .box {
+        margin-top: 50px;
+        display: block;
+    }
+
+    .red,
+    .blue,
+    .green {
+        width: 200px;
+        height: 20px;
+    }
+}
+
+@media (max-width:768px) and (min-width:481px) {
+    * {
+        background-color: black;
+    }
+
+    .box {
+        margin-top: 350px;
+        display: block;
+    }
+
+    .red,
+    .blue,
+    .green {
+        width: 250px;
+        height: 20px;
+    }
+}
