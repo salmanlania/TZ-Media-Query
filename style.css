@@ -1,122 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,600&family=Poppins:wght@300;500;600&display=swap');
-
-
-
-
-.box {
-    margin: 350px;
+.main {
     display: flex;
+    justify-content: space-around;
 }
 
-.red {
-    border: 1px solid red;
-    background-color: red;
+.firstbox {
+    border: 2px solid black;
+    width: 200px;
     height: 200px;
-    width: 1000px;
+    background-color: black;
+    display: none;
 }
 
-.green {
-    border: 1px solid green;
-    background-color: green;
+.secondbox {
+    border: 2px solid rgb(180, 40, 40);
+    width: 200px;
     height: 200px;
-    width: 1000px;
+    background-color: rgb(180, 40, 40);
 }
 
-.blue {
-    border: 1px solid blue;
-    background-color: blue;
+.thirdbox {
+    border: 2px solid rgb(14, 136, 65);
+    width: 200px;
     height: 200px;
-    width: 1000px;
+    background-color: rgb(14, 136, 65);
 }
 
-
-@media only screen and (max-width: 1000px) {
-    .box {
-      display: block;
-    }
-  }
-@media only screen and (max-width: 900px) {
-    .box {
-      display: block;
-    }
-    .red{
-        width: 550px;
-    }
-    .green{
-        width: 550px;
-    }
-    .blue{
-        width: 550px;
-    }
-  }
-@media only screen and (max-width: 600px) {
-    .box {
-      display: block;
-    }
-    .red{
-        width: 300px;
-    }
-    .green{
-        width: 300px;
-    }
-    .blue{
-        width: 300px;
-    }
-  }
-@media only screen and (max-width: 320px) {
-    .box {
-      display: flex;
-    }
-    .red{
-        width: 100px;
-        height: 50px;
-    }
-    .green{
-        width: 100px;
-        height: 50px;
-    }
-    .blue{
-        width: 100px;
-        height: 50px;
-    }
-  }
-
-
-@media (max-width:480px) and (min-width:320px) {
-    * {
+/* 
+@media only screen and (max-width: 700px) {
+    .firstbox {
         background-color: red;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Poppins', sans-serif;
-        font-size: 22px;
+        border: 0;
     }
 
-    .box {
-        margin-top: 50px;
-        display: block;
+    .secondbox {
+        background-color: green;
+        border: 0;
     }
 
-    .red,
-    .blue,
-    .green {
-        width: 200px;
-        height: 20px;
+    .thirdbox {
+        background-color: yellow;
+        border: 0;
     }
 }
 
-@media (max-width:768px) and (min-width:481px) {
-    * {
-        background-color: black;
+@media only screen and (max-width: 605px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 220px) {
+    .firstbox {
+        width: 100px;
+        height: 100px;
+        transition: 5s;
+        transform: scale(1.1);
     }
 
-    .box {
-        margin-top: 350px;
-        display: block;
+    .secondbox {
+        width: 100px;
+        height: 100px;
+        transition: 5s;
+        transform: scale(1.1);
     }
 
-    .red,
-    .blue,
-    .green {
-        width: 250px;
-        height: 20px;
+    .thirdbox {
+        width: 100px;
+        height: 100px;
+        transition: 5s;
+        transform: scale(1.1);
+    }
+} */
+@media only screen and (max-width: 320px) {
+    *{
+        background-color: pink;
+    }
+}
+
+@media (min-width:320px ) and (max-width:480px) {
+    *{
+        background-color: blue;
+    }
+}
+@media (min-width:481px ) and (max-width:768px) {
+    *{
+        background-color: yellow;
+    }
+}
+@media (min-width:769px ) and (max-width:1024px) {
+    *{
+        background-color: green;
+    }
+}
+@media (min-width:1025px  ) and (max-width:1200px) {
+    *{
+        background-color: gray;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    *{
+        background-color: silver;
     }
 }
